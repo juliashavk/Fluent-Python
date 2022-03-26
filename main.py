@@ -22,7 +22,7 @@ suit_values = dict(spades = 3, hearts= 2, diamonds= 1, clubs = 0)
 
 def spades_high(crd):
     rank_value =FrenchDeck.ranks.index(crd.rank)
-    return rank_value * len(suit_values) + suit_values[crd.suit]
+    return rank_value * len(suit_values) + suit_values[crd.suit] #TODO
 
 for card in sorted(deck, key = spades_high): #doctest: +ELLIPSIS
     print(card)
